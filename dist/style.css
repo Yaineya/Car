@@ -1,0 +1,70 @@
+.wrapper {
+  display: flex;
+}
+
+.car {
+  margin: 30px;
+  width: 300px;
+  border: 1px solid purple;
+}
+
+.turn_signal {
+  width: 25px;
+  height: 25px;
+  background-color: #f5e6b6;
+  border: 1px dashed #be8fec;
+}
+
+.hood {
+  display: flex;
+  justify-content: space-between;
+  height: 150px;
+  border-bottom: 2px solid red;
+}
+.hood .block_head_left,
+.hood .block_head_right {
+  display: flex;
+  align-items: flex-start;
+}
+.hood .lamp_off {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #f5e6b6;
+}
+.hood .lamp_on {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #e74707;
+}
+
+.body_car {
+  display: flex;
+  justify-content: space-between;
+  height: 450px;
+  border-bottom: 2px solid #5a64e9;
+}
+
+.luggage {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+}
+.luggage .block_left_signal,
+.luggage .block_right_signal {
+  display: flex;
+  align-items: flex-end;
+}
+.luggage .stop_signal {
+  width: 35px;
+  height: 35px;
+  background-color: #f5e6b6;
+  border: 1px solid #a04949;
+}
+
+.interface {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}

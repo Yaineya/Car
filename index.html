@@ -1,15 +1,49 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <title>Car</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="/car/dist/style.css">
 </head>
+
 <body>
-    <div class="car">
-        <div class="lamp"></div>
-        <div class="lamp on"></div>
+    <div class="wrapper">
+        <div class="car">
+            <div class="hood">
+                <div class="block_head_left">
+                    <div class="turn_signal">L</div>
+                    <div class="lamp_off"></div>
+                </div>
+                <div class="block_head_right">
+                    <div class="lamp_off"></div>
+                    <div class="turn_signal">R</div>
+                </div>
+            </div>
+            <div class="body_car">
+                <div class="turn_signal">L</div>
+                <div class="turn_signal">R</div>
+            </div>
+            <div class="luggage">
+                <div class="block_left_signal">
+                    <div class="turn_signal">L</div>
+                    <div class="stop_signal"></div>
+                </div>
+                <div class="block_right_signal">
+                    <div class="stop_signal"></div>
+                    <div class="turn_signal">R</div>
+                </div>
+            </div>
+        </div>
+        <div class="interface">
+            <button class="lamp">Фары</button>
+            <button class="emergency">Аварийка</button>
+            <button>Стоп</button>
+            <button>Поворот налево</button>
+            <button>Поворот направо</button>
+        </div>
     </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
