@@ -26,23 +26,22 @@
   display: flex;
   align-items: flex-start;
 }
-.hood .lamp_off {
+.hood .lamp {
   width: 50px;
   height: 50px;
   border-radius: 50%;
+}
+.hood .lamp.off {
   background-color: #f5e6b6;
 }
-.hood .lamp_on {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+.hood .lamp.on {
   background-color: #e74707;
 }
 
 .body_car {
   display: flex;
   justify-content: space-between;
-  height: 450px;
+  height: 250px;
   border-bottom: 2px solid #5a64e9;
 }
 

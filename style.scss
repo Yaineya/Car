@@ -25,17 +25,17 @@
         display: flex;
         align-items: flex-start;
     }
-    .lamp_off {
+    .lamp {
         width: 50px;
         height: 50px;
         border-radius: 50%;
-        background-color: rgb(245, 230, 182);
-    }
-    .lamp_on {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background-color: rgb(231, 71, 7);
+        &.off {
+            background-color: rgb(245, 230, 182);
+        }
+        &.on {
+            background-color: rgb(231, 71, 7);
+        }
+        
     }
     
 }
@@ -43,7 +43,7 @@
 .body_car {
     display: flex;
     justify-content: space-between;
-    height: 450px;
+    height: 250px;
     border-bottom: 2px solid rgb(90, 100, 233);
 }
 
