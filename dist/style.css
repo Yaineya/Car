@@ -11,14 +11,25 @@
 .turn_signal {
   width: 25px;
   height: 25px;
-  background-color: #f5e6b6;
   border: 1px dashed #be8fec;
+  background-color: #f5e6b6;
+}
+.turn_signal.on {
+  animation: on 1s linear infinite;
+}
+@keyframes on {
+  1% {
+    background-color: #f5e6b6;
+  }
+  100% {
+    background-color: #e73232;
+  }
 }
 
 .hood {
   display: flex;
   justify-content: space-between;
-  height: 150px;
+  height: 50px;
   border-bottom: 2px solid red;
 }
 .hood .block_head_left,
@@ -35,20 +46,23 @@
   background-color: #f5e6b6;
 }
 .hood .lamp.on {
-  background-color: #e74707;
+  background-color: #fab296;
+}
+.hood .lamp.high {
+  background-color: #f3652d;
 }
 
 .body_car {
   display: flex;
   justify-content: space-between;
-  height: 250px;
+  height: 100px;
   border-bottom: 2px solid #5a64e9;
 }
 
 .luggage {
   display: flex;
   justify-content: space-between;
-  height: 100px;
+  height: 50px;
 }
 .luggage .block_left_signal,
 .luggage .block_right_signal {
@@ -58,12 +72,21 @@
 .luggage .stop_signal {
   width: 35px;
   height: 35px;
-  background-color: #f5e6b6;
   border: 1px solid #a04949;
+}
+.luggage .stop_signal.off {
+  background-color: #f5e6b6;
+}
+.luggage .stop_signal.on {
+  background-color: #f54242;
+  color: white;
 }
 
 .interface {
   display: flex;
   flex-direction: column;
   margin: 30px;
+}
+.interface button {
+  margin-bottom: 10px;
 }

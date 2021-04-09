@@ -2,9 +2,9 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" lang="ru">
     <title>Car</title>
-    <link rel="stylesheet" href="/car/dist/style.css">
+    <link rel="stylesheet" href="./dist/style.css">
 </head>
 
 <body>
@@ -12,35 +12,36 @@
         <div class="car">
             <div class="hood">
                 <div class="block_head_left">
-                    <div class="turn_signal">L</div>
+                    <div id="em" class="turn_signal left">L</div>
                     <div class="lamp off"></div>
                 </div>
                 <div class="block_head_right">
                     <div class="lamp off"></div>
-                    <div class="turn_signal">R</div>
+                    <div id="em"  class="turn_signal right">R</div>
                 </div>
             </div>
             <div class="body_car">
-                <div class="turn_signal">L</div>
-                <div class="turn_signal">R</div>
+                <div id="em" class="turn_signal left">L</div>
+                <div id="em" class="turn_signal right">R</div>
             </div>
             <div class="luggage">
                 <div class="block_left_signal">
-                    <div class="turn_signal">L</div>
-                    <div class="stop_signal"></div>
+                    <div id="em" class="turn_signal left">L</div>
+                    <div id="em" class="stop_signal off">Stop</div>
                 </div>
                 <div class="block_right_signal">
-                    <div class="stop_signal"></div>
-                    <div class="turn_signal">R</div>
+                    <div class="stop_signal off">Stop</div>
+                    <div id="em" class="turn_signal right">R</div>
                 </div>
             </div>
         </div>
         <div class="interface">
-            <button data-js="hoodLamps">Фары</button>
+            <button data-js="hoodLamps">Ближний Свет</button>
+            <button class="highBeam">Дальний свет</button>
             <button class="emergency">Аварийка</button>
-            <button>Стоп</button>
-            <button>Поворот налево</button>
-            <button>Поворот направо</button>
+            <button class="stop_btn">Стоп</button>
+            <button class="btn_left">Поворот налево</button>
+            <button class="btn_right">Поворот направо</button>
         </div>
     </div>
    <!-- <script src="../../jquery-3.5.1.min.js"></script> -->

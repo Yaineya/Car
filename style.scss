@@ -8,12 +8,25 @@
     border: 1px solid purple;
 }
 
-.turn_signal{
+.turn_signal {
     width: 25px;
     height: 25px;
-    background-color: rgb(245, 230, 182);
     border: 1px dashed rgb(190, 143, 236);
+    background-color: rgb(245, 230, 182);
+    &.on {
+        animation: on 1.0s linear infinite;
+    }
+
+    @keyframes on {
+        1% {
+            background-color:  rgb(245, 230, 182);
+        }
+        100% {
+            background-color: rgb(231, 50, 50)
+        }
+    }
 }
+
 
 .hood {
     display: flex;
@@ -33,7 +46,10 @@
             background-color: rgb(245, 230, 182);
         }
         &.on {
-            background-color: rgb(231, 71, 7);
+            background-color: rgb(250, 178, 150);
+        }
+        &.high{
+            background-color: rgb(243, 101, 45);
         }
         
     }
@@ -43,29 +59,40 @@
 .body_car {
     display: flex;
     justify-content: space-between;
-    height: 250px;
+    height: 100px;
     border-bottom: 2px solid rgb(90, 100, 233);
 }
 
 .luggage {
     display: flex;
     justify-content: space-between;
-    height: 100px;
+    height: 50px;
     .block_left_signal,
     .block_right_signal{
         display: flex;
         align-items: flex-end;
-    }
+    }  
     .stop_signal{
         width: 35px;
         height: 35px;
-        background-color: rgb(245, 230, 182);
         border: 1px solid rgb(160, 73, 73);
+        &.off{
+            background-color: rgb(245, 230, 182);
+        }
+        &.on{
+            background-color: rgb(245, 66, 66);
+            color:white; 
+        }
+        
     }
 }
 
 .interface{
     display: flex;
     flex-direction: column;
-    margin: 30px;
+    margin: 30px ;
+    button{
+        margin-bottom: 10px;
+        
+    }
 }
